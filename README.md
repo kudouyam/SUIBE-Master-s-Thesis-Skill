@@ -37,7 +37,7 @@ python scripts/format_thesis.py "论文原稿.docx" --out "论文_SUIBE规范排
 | [references/](references/) | 校方规范逐项对照、识别准则、验收检查、GitHub 前辈研究 |
 | [scripts/format_thesis.py](scripts/format_thesis.py) | Python 排版和报告生成引擎 |
 | [tests/](tests/) | 回归验证 |
-| [examples/](examples/) | 演示与修正报告（若已提供） |
+| [scripts/build_fixture.py](scripts/build_fixture.py) | 自动生成供回归验证的混乱格式测试论文 |
 
 适合 Codex、Claude Code、GPT Work 等有读仓库及 Python/Word 文件能力的 Agent。支持可编辑 `.docx`，不承诺扫描 PDF、加密 DOC、复杂浮动公式等无损转换。
 
@@ -51,6 +51,7 @@ python scripts/format_thesis.py "论文原稿.docx" --out "论文_SUIBE规范排
 
 ```bash
 python -m pip install -r requirements.txt
+python -m pip install -r requirements-dev.txt
 python -m pytest -q tests/test_formatter.py
 ```
 
@@ -61,3 +62,7 @@ Word 字段、分节、跨页续表、浮动对象、封面授权签名仍需要
 项目设计参考 [Yangruipis/SUIBEthesis](https://github.com/Yangruipis/SUIBEthesis)、[wojiaobadaye/SUIBE_Latex](https://github.com/wojiaobadaye/SUIBE_Latex) 等上外贸开源模板的工程经验。详情见 `references/04_GitHub开源项目逐库审查与迁移矩阵.md`。外部模板的样式不自动替代本项目所依据的 2020 年硕士校规。
 
 This is an **independent, unofficial** community skill; no affiliation with or endorsement from SUIBE is implied.
+
+### Agent 使用边界
+
+仓库已含真正的可编辑 DOCX 排版引擎（**无须另下 ZIP**）。在 Codex / Claude Code / GPT Work 等具备命令执行能力的环境中，克隆后直接运行即可；若宿主不允许访问 GitHub、读写文件或安装 Python 依赖，链接本身无法替代这些权限。复杂论文需要由 Agent 实际打开渲染稿逐页审查，并在报告中声明未完成的审查项目。

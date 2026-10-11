@@ -1,0 +1,43 @@
+{
+  "review_date": "2026-10-11",
+  "authority": "User-provided SUIBE master's dissertation requirements (2020 revision), not GitHub templates",
+  "review_method": "GitHub public metadata, README, selected .tex and .cls via connector; binary .doc/.zip sources not fully inspected",
+  "repositories": [
+    {
+      "repo": "Yangruipis/SUIBEthesis",
+      "license": "MIT",
+      "status": "README/cls/main.tex inspected",
+      "notes": "2018 master's template; differs on margins"
+    },
+    {
+      "repo": "wojiaobadaye/SUIBE_Latex",
+      "license": "unspecified",
+      "status": "README inspected; binary zip not fully inspected"
+    },
+    {
+      "repo": "Epiphany-Leon/Bachelor-thesis-template-SUIBE",
+      "license": "MIT",
+      "status": "text source inspected; 2025 undergraduate English thesis"
+    },
+    {
+      "repo": "cf3901646/suibe-thesis-template",
+      "license": "unspecified",
+      "status": "README inspected; 2027 undergraduate DOC not fully inspected"
+    },
+    {
+      "repo": "MadisonRuoxiTian/suibe-undergraduate-thesis-latex-template",
+      "license": "MIT nested",
+      "status": "2026 undergraduate cls inspected"
+    },
+    {
+      "repo": "ChangjiangDong/SUIBEthesis",
+      "license": "MIT",
+      "status": "fork of Yangruipis/SUIBEthesis"
+    },
+    {
+      "repo": "JarvanShi/SUIBEthesis",
+      "license": "MIT",
+      "status": "fork of Yangruipis/SUIBEthesis"
+    }
+  ]
+}
