@@ -1,0 +1,8 @@
+__pycache__/
+.pytest_cache/
+*.py[cod]
+.venv/
+_qa_pages/
+_qa_render/
+*.tmp
+~$*.docx
